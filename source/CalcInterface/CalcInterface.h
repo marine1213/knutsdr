@@ -3,11 +3,15 @@
 
 
 #include "../Common.h"
+#include "../CmdInterface/CmdInterface.h"
 
 
-//---------------- RF communication setup ---------------
+//----------------------------------------------------------
+void    keepGoingForwardThread();
+void 	changDirectionThread();
 
-
+//----------------- Calculation Helper ---------------------
+float directionDetermining(Point *target);
 //----------------------------------------------------------
 
 #endif

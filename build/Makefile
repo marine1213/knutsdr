@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/labSelfDriving/build
+CMAKE_SOURCE_DIR = /home/pi/labSelfDriving/knutsdr/build
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/labSelfDriving/build
+CMAKE_BINARY_DIR = /home/pi/labSelfDriving/knutsdr/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -73,9 +73,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/labSelfDriving/build/CMakeFiles /home/pi/labSelfDriving/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/labSelfDriving/knutsdr/build/CMakeFiles /home/pi/labSelfDriving/knutsdr/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/labSelfDriving/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/labSelfDriving/knutsdr/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -115,293 +115,341 @@ selfDrivingCarExe/fast:
 	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/build
 .PHONY : selfDrivingCarExe/fast
 
-home/pi/labSelfDriving/source/CmdInterface/SystemVariables.o: home/pi/labSelfDriving/source/CmdInterface/SystemVariables.cpp.o
-.PHONY : home/pi/labSelfDriving/source/CmdInterface/SystemVariables.o
+home/pi/labSelfDriving/knutsdr/source/CalcInterface/selfDriving_CalcThread.o: home/pi/labSelfDriving/knutsdr/source/CalcInterface/selfDriving_CalcThread.cpp.o
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CalcInterface/selfDriving_CalcThread.o
 
 # target to build an object file
-home/pi/labSelfDriving/source/CmdInterface/SystemVariables.cpp.o:
-	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/source/CmdInterface/SystemVariables.cpp.o
-.PHONY : home/pi/labSelfDriving/source/CmdInterface/SystemVariables.cpp.o
+home/pi/labSelfDriving/knutsdr/source/CalcInterface/selfDriving_CalcThread.cpp.o:
+	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/knutsdr/source/CalcInterface/selfDriving_CalcThread.cpp.o
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CalcInterface/selfDriving_CalcThread.cpp.o
 
-home/pi/labSelfDriving/source/CmdInterface/SystemVariables.i: home/pi/labSelfDriving/source/CmdInterface/SystemVariables.cpp.i
-.PHONY : home/pi/labSelfDriving/source/CmdInterface/SystemVariables.i
+home/pi/labSelfDriving/knutsdr/source/CalcInterface/selfDriving_CalcThread.i: home/pi/labSelfDriving/knutsdr/source/CalcInterface/selfDriving_CalcThread.cpp.i
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CalcInterface/selfDriving_CalcThread.i
 
 # target to preprocess a source file
-home/pi/labSelfDriving/source/CmdInterface/SystemVariables.cpp.i:
-	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/source/CmdInterface/SystemVariables.cpp.i
-.PHONY : home/pi/labSelfDriving/source/CmdInterface/SystemVariables.cpp.i
+home/pi/labSelfDriving/knutsdr/source/CalcInterface/selfDriving_CalcThread.cpp.i:
+	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/knutsdr/source/CalcInterface/selfDriving_CalcThread.cpp.i
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CalcInterface/selfDriving_CalcThread.cpp.i
 
-home/pi/labSelfDriving/source/CmdInterface/SystemVariables.s: home/pi/labSelfDriving/source/CmdInterface/SystemVariables.cpp.s
-.PHONY : home/pi/labSelfDriving/source/CmdInterface/SystemVariables.s
+home/pi/labSelfDriving/knutsdr/source/CalcInterface/selfDriving_CalcThread.s: home/pi/labSelfDriving/knutsdr/source/CalcInterface/selfDriving_CalcThread.cpp.s
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CalcInterface/selfDriving_CalcThread.s
 
 # target to generate assembly for a file
-home/pi/labSelfDriving/source/CmdInterface/SystemVariables.cpp.s:
-	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/source/CmdInterface/SystemVariables.cpp.s
-.PHONY : home/pi/labSelfDriving/source/CmdInterface/SystemVariables.cpp.s
+home/pi/labSelfDriving/knutsdr/source/CalcInterface/selfDriving_CalcThread.cpp.s:
+	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/knutsdr/source/CalcInterface/selfDriving_CalcThread.cpp.s
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CalcInterface/selfDriving_CalcThread.cpp.s
 
-home/pi/labSelfDriving/source/CmdInterface/selfDriving_CmdThread.o: home/pi/labSelfDriving/source/CmdInterface/selfDriving_CmdThread.cpp.o
-.PHONY : home/pi/labSelfDriving/source/CmdInterface/selfDriving_CmdThread.o
+home/pi/labSelfDriving/knutsdr/source/CalcInterface/selfDriving_calulationHelper.o: home/pi/labSelfDriving/knutsdr/source/CalcInterface/selfDriving_calulationHelper.cpp.o
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CalcInterface/selfDriving_calulationHelper.o
 
 # target to build an object file
-home/pi/labSelfDriving/source/CmdInterface/selfDriving_CmdThread.cpp.o:
-	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/source/CmdInterface/selfDriving_CmdThread.cpp.o
-.PHONY : home/pi/labSelfDriving/source/CmdInterface/selfDriving_CmdThread.cpp.o
+home/pi/labSelfDriving/knutsdr/source/CalcInterface/selfDriving_calulationHelper.cpp.o:
+	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/knutsdr/source/CalcInterface/selfDriving_calulationHelper.cpp.o
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CalcInterface/selfDriving_calulationHelper.cpp.o
 
-home/pi/labSelfDriving/source/CmdInterface/selfDriving_CmdThread.i: home/pi/labSelfDriving/source/CmdInterface/selfDriving_CmdThread.cpp.i
-.PHONY : home/pi/labSelfDriving/source/CmdInterface/selfDriving_CmdThread.i
+home/pi/labSelfDriving/knutsdr/source/CalcInterface/selfDriving_calulationHelper.i: home/pi/labSelfDriving/knutsdr/source/CalcInterface/selfDriving_calulationHelper.cpp.i
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CalcInterface/selfDriving_calulationHelper.i
 
 # target to preprocess a source file
-home/pi/labSelfDriving/source/CmdInterface/selfDriving_CmdThread.cpp.i:
-	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/source/CmdInterface/selfDriving_CmdThread.cpp.i
-.PHONY : home/pi/labSelfDriving/source/CmdInterface/selfDriving_CmdThread.cpp.i
+home/pi/labSelfDriving/knutsdr/source/CalcInterface/selfDriving_calulationHelper.cpp.i:
+	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/knutsdr/source/CalcInterface/selfDriving_calulationHelper.cpp.i
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CalcInterface/selfDriving_calulationHelper.cpp.i
 
-home/pi/labSelfDriving/source/CmdInterface/selfDriving_CmdThread.s: home/pi/labSelfDriving/source/CmdInterface/selfDriving_CmdThread.cpp.s
-.PHONY : home/pi/labSelfDriving/source/CmdInterface/selfDriving_CmdThread.s
+home/pi/labSelfDriving/knutsdr/source/CalcInterface/selfDriving_calulationHelper.s: home/pi/labSelfDriving/knutsdr/source/CalcInterface/selfDriving_calulationHelper.cpp.s
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CalcInterface/selfDriving_calulationHelper.s
 
 # target to generate assembly for a file
-home/pi/labSelfDriving/source/CmdInterface/selfDriving_CmdThread.cpp.s:
-	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/source/CmdInterface/selfDriving_CmdThread.cpp.s
-.PHONY : home/pi/labSelfDriving/source/CmdInterface/selfDriving_CmdThread.cpp.s
+home/pi/labSelfDriving/knutsdr/source/CalcInterface/selfDriving_calulationHelper.cpp.s:
+	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/knutsdr/source/CalcInterface/selfDriving_calulationHelper.cpp.s
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CalcInterface/selfDriving_calulationHelper.cpp.s
 
-home/pi/labSelfDriving/source/CmdInterface/selfDriving_HighLvCmd.o: home/pi/labSelfDriving/source/CmdInterface/selfDriving_HighLvCmd.cpp.o
-.PHONY : home/pi/labSelfDriving/source/CmdInterface/selfDriving_HighLvCmd.o
+home/pi/labSelfDriving/knutsdr/source/CmdInterface/SystemVariables.o: home/pi/labSelfDriving/knutsdr/source/CmdInterface/SystemVariables.cpp.o
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CmdInterface/SystemVariables.o
 
 # target to build an object file
-home/pi/labSelfDriving/source/CmdInterface/selfDriving_HighLvCmd.cpp.o:
-	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/source/CmdInterface/selfDriving_HighLvCmd.cpp.o
-.PHONY : home/pi/labSelfDriving/source/CmdInterface/selfDriving_HighLvCmd.cpp.o
+home/pi/labSelfDriving/knutsdr/source/CmdInterface/SystemVariables.cpp.o:
+	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/knutsdr/source/CmdInterface/SystemVariables.cpp.o
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CmdInterface/SystemVariables.cpp.o
 
-home/pi/labSelfDriving/source/CmdInterface/selfDriving_HighLvCmd.i: home/pi/labSelfDriving/source/CmdInterface/selfDriving_HighLvCmd.cpp.i
-.PHONY : home/pi/labSelfDriving/source/CmdInterface/selfDriving_HighLvCmd.i
+home/pi/labSelfDriving/knutsdr/source/CmdInterface/SystemVariables.i: home/pi/labSelfDriving/knutsdr/source/CmdInterface/SystemVariables.cpp.i
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CmdInterface/SystemVariables.i
 
 # target to preprocess a source file
-home/pi/labSelfDriving/source/CmdInterface/selfDriving_HighLvCmd.cpp.i:
-	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/source/CmdInterface/selfDriving_HighLvCmd.cpp.i
-.PHONY : home/pi/labSelfDriving/source/CmdInterface/selfDriving_HighLvCmd.cpp.i
+home/pi/labSelfDriving/knutsdr/source/CmdInterface/SystemVariables.cpp.i:
+	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/knutsdr/source/CmdInterface/SystemVariables.cpp.i
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CmdInterface/SystemVariables.cpp.i
 
-home/pi/labSelfDriving/source/CmdInterface/selfDriving_HighLvCmd.s: home/pi/labSelfDriving/source/CmdInterface/selfDriving_HighLvCmd.cpp.s
-.PHONY : home/pi/labSelfDriving/source/CmdInterface/selfDriving_HighLvCmd.s
+home/pi/labSelfDriving/knutsdr/source/CmdInterface/SystemVariables.s: home/pi/labSelfDriving/knutsdr/source/CmdInterface/SystemVariables.cpp.s
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CmdInterface/SystemVariables.s
 
 # target to generate assembly for a file
-home/pi/labSelfDriving/source/CmdInterface/selfDriving_HighLvCmd.cpp.s:
-	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/source/CmdInterface/selfDriving_HighLvCmd.cpp.s
-.PHONY : home/pi/labSelfDriving/source/CmdInterface/selfDriving_HighLvCmd.cpp.s
+home/pi/labSelfDriving/knutsdr/source/CmdInterface/SystemVariables.cpp.s:
+	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/knutsdr/source/CmdInterface/SystemVariables.cpp.s
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CmdInterface/SystemVariables.cpp.s
 
-home/pi/labSelfDriving/source/CmdInterface/selfDriving_IOPi.o: home/pi/labSelfDriving/source/CmdInterface/selfDriving_IOPi.cpp.o
-.PHONY : home/pi/labSelfDriving/source/CmdInterface/selfDriving_IOPi.o
+home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_CmdThread.o: home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_CmdThread.cpp.o
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_CmdThread.o
 
 # target to build an object file
-home/pi/labSelfDriving/source/CmdInterface/selfDriving_IOPi.cpp.o:
-	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/source/CmdInterface/selfDriving_IOPi.cpp.o
-.PHONY : home/pi/labSelfDriving/source/CmdInterface/selfDriving_IOPi.cpp.o
+home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_CmdThread.cpp.o:
+	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_CmdThread.cpp.o
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_CmdThread.cpp.o
 
-home/pi/labSelfDriving/source/CmdInterface/selfDriving_IOPi.i: home/pi/labSelfDriving/source/CmdInterface/selfDriving_IOPi.cpp.i
-.PHONY : home/pi/labSelfDriving/source/CmdInterface/selfDriving_IOPi.i
+home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_CmdThread.i: home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_CmdThread.cpp.i
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_CmdThread.i
 
 # target to preprocess a source file
-home/pi/labSelfDriving/source/CmdInterface/selfDriving_IOPi.cpp.i:
-	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/source/CmdInterface/selfDriving_IOPi.cpp.i
-.PHONY : home/pi/labSelfDriving/source/CmdInterface/selfDriving_IOPi.cpp.i
+home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_CmdThread.cpp.i:
+	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_CmdThread.cpp.i
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_CmdThread.cpp.i
 
-home/pi/labSelfDriving/source/CmdInterface/selfDriving_IOPi.s: home/pi/labSelfDriving/source/CmdInterface/selfDriving_IOPi.cpp.s
-.PHONY : home/pi/labSelfDriving/source/CmdInterface/selfDriving_IOPi.s
+home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_CmdThread.s: home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_CmdThread.cpp.s
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_CmdThread.s
 
 # target to generate assembly for a file
-home/pi/labSelfDriving/source/CmdInterface/selfDriving_IOPi.cpp.s:
-	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/source/CmdInterface/selfDriving_IOPi.cpp.s
-.PHONY : home/pi/labSelfDriving/source/CmdInterface/selfDriving_IOPi.cpp.s
+home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_CmdThread.cpp.s:
+	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_CmdThread.cpp.s
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_CmdThread.cpp.s
 
-home/pi/labSelfDriving/source/CmdInterface/selfDriving_LowLvCmd.o: home/pi/labSelfDriving/source/CmdInterface/selfDriving_LowLvCmd.cpp.o
-.PHONY : home/pi/labSelfDriving/source/CmdInterface/selfDriving_LowLvCmd.o
+home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_HighLvCmd.o: home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_HighLvCmd.cpp.o
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_HighLvCmd.o
 
 # target to build an object file
-home/pi/labSelfDriving/source/CmdInterface/selfDriving_LowLvCmd.cpp.o:
-	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/source/CmdInterface/selfDriving_LowLvCmd.cpp.o
-.PHONY : home/pi/labSelfDriving/source/CmdInterface/selfDriving_LowLvCmd.cpp.o
+home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_HighLvCmd.cpp.o:
+	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_HighLvCmd.cpp.o
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_HighLvCmd.cpp.o
 
-home/pi/labSelfDriving/source/CmdInterface/selfDriving_LowLvCmd.i: home/pi/labSelfDriving/source/CmdInterface/selfDriving_LowLvCmd.cpp.i
-.PHONY : home/pi/labSelfDriving/source/CmdInterface/selfDriving_LowLvCmd.i
+home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_HighLvCmd.i: home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_HighLvCmd.cpp.i
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_HighLvCmd.i
 
 # target to preprocess a source file
-home/pi/labSelfDriving/source/CmdInterface/selfDriving_LowLvCmd.cpp.i:
-	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/source/CmdInterface/selfDriving_LowLvCmd.cpp.i
-.PHONY : home/pi/labSelfDriving/source/CmdInterface/selfDriving_LowLvCmd.cpp.i
+home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_HighLvCmd.cpp.i:
+	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_HighLvCmd.cpp.i
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_HighLvCmd.cpp.i
 
-home/pi/labSelfDriving/source/CmdInterface/selfDriving_LowLvCmd.s: home/pi/labSelfDriving/source/CmdInterface/selfDriving_LowLvCmd.cpp.s
-.PHONY : home/pi/labSelfDriving/source/CmdInterface/selfDriving_LowLvCmd.s
+home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_HighLvCmd.s: home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_HighLvCmd.cpp.s
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_HighLvCmd.s
 
 # target to generate assembly for a file
-home/pi/labSelfDriving/source/CmdInterface/selfDriving_LowLvCmd.cpp.s:
-	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/source/CmdInterface/selfDriving_LowLvCmd.cpp.s
-.PHONY : home/pi/labSelfDriving/source/CmdInterface/selfDriving_LowLvCmd.cpp.s
+home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_HighLvCmd.cpp.s:
+	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_HighLvCmd.cpp.s
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_HighLvCmd.cpp.s
 
-home/pi/labSelfDriving/source/CmdInterface/selfDriving_Time.o: home/pi/labSelfDriving/source/CmdInterface/selfDriving_Time.cpp.o
-.PHONY : home/pi/labSelfDriving/source/CmdInterface/selfDriving_Time.o
+home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_IOPi.o: home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_IOPi.cpp.o
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_IOPi.o
 
 # target to build an object file
-home/pi/labSelfDriving/source/CmdInterface/selfDriving_Time.cpp.o:
-	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/source/CmdInterface/selfDriving_Time.cpp.o
-.PHONY : home/pi/labSelfDriving/source/CmdInterface/selfDriving_Time.cpp.o
+home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_IOPi.cpp.o:
+	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_IOPi.cpp.o
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_IOPi.cpp.o
 
-home/pi/labSelfDriving/source/CmdInterface/selfDriving_Time.i: home/pi/labSelfDriving/source/CmdInterface/selfDriving_Time.cpp.i
-.PHONY : home/pi/labSelfDriving/source/CmdInterface/selfDriving_Time.i
+home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_IOPi.i: home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_IOPi.cpp.i
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_IOPi.i
 
 # target to preprocess a source file
-home/pi/labSelfDriving/source/CmdInterface/selfDriving_Time.cpp.i:
-	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/source/CmdInterface/selfDriving_Time.cpp.i
-.PHONY : home/pi/labSelfDriving/source/CmdInterface/selfDriving_Time.cpp.i
+home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_IOPi.cpp.i:
+	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_IOPi.cpp.i
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_IOPi.cpp.i
 
-home/pi/labSelfDriving/source/CmdInterface/selfDriving_Time.s: home/pi/labSelfDriving/source/CmdInterface/selfDriving_Time.cpp.s
-.PHONY : home/pi/labSelfDriving/source/CmdInterface/selfDriving_Time.s
+home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_IOPi.s: home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_IOPi.cpp.s
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_IOPi.s
 
 # target to generate assembly for a file
-home/pi/labSelfDriving/source/CmdInterface/selfDriving_Time.cpp.s:
-	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/source/CmdInterface/selfDriving_Time.cpp.s
-.PHONY : home/pi/labSelfDriving/source/CmdInterface/selfDriving_Time.cpp.s
+home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_IOPi.cpp.s:
+	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_IOPi.cpp.s
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_IOPi.cpp.s
 
-home/pi/labSelfDriving/source/CmdInterface/selfDriving_WheelState.o: home/pi/labSelfDriving/source/CmdInterface/selfDriving_WheelState.cpp.o
-.PHONY : home/pi/labSelfDriving/source/CmdInterface/selfDriving_WheelState.o
+home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_LowLvCmd.o: home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_LowLvCmd.cpp.o
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_LowLvCmd.o
 
 # target to build an object file
-home/pi/labSelfDriving/source/CmdInterface/selfDriving_WheelState.cpp.o:
-	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/source/CmdInterface/selfDriving_WheelState.cpp.o
-.PHONY : home/pi/labSelfDriving/source/CmdInterface/selfDriving_WheelState.cpp.o
+home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_LowLvCmd.cpp.o:
+	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_LowLvCmd.cpp.o
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_LowLvCmd.cpp.o
 
-home/pi/labSelfDriving/source/CmdInterface/selfDriving_WheelState.i: home/pi/labSelfDriving/source/CmdInterface/selfDriving_WheelState.cpp.i
-.PHONY : home/pi/labSelfDriving/source/CmdInterface/selfDriving_WheelState.i
+home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_LowLvCmd.i: home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_LowLvCmd.cpp.i
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_LowLvCmd.i
 
 # target to preprocess a source file
-home/pi/labSelfDriving/source/CmdInterface/selfDriving_WheelState.cpp.i:
-	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/source/CmdInterface/selfDriving_WheelState.cpp.i
-.PHONY : home/pi/labSelfDriving/source/CmdInterface/selfDriving_WheelState.cpp.i
+home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_LowLvCmd.cpp.i:
+	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_LowLvCmd.cpp.i
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_LowLvCmd.cpp.i
 
-home/pi/labSelfDriving/source/CmdInterface/selfDriving_WheelState.s: home/pi/labSelfDriving/source/CmdInterface/selfDriving_WheelState.cpp.s
-.PHONY : home/pi/labSelfDriving/source/CmdInterface/selfDriving_WheelState.s
+home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_LowLvCmd.s: home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_LowLvCmd.cpp.s
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_LowLvCmd.s
 
 # target to generate assembly for a file
-home/pi/labSelfDriving/source/CmdInterface/selfDriving_WheelState.cpp.s:
-	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/source/CmdInterface/selfDriving_WheelState.cpp.s
-.PHONY : home/pi/labSelfDriving/source/CmdInterface/selfDriving_WheelState.cpp.s
+home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_LowLvCmd.cpp.s:
+	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_LowLvCmd.cpp.s
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_LowLvCmd.cpp.s
 
-home/pi/labSelfDriving/source/CommInterface/selfDriving_CommDataDecode.o: home/pi/labSelfDriving/source/CommInterface/selfDriving_CommDataDecode.cpp.o
-.PHONY : home/pi/labSelfDriving/source/CommInterface/selfDriving_CommDataDecode.o
+home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_Time.o: home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_Time.cpp.o
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_Time.o
 
 # target to build an object file
-home/pi/labSelfDriving/source/CommInterface/selfDriving_CommDataDecode.cpp.o:
-	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/source/CommInterface/selfDriving_CommDataDecode.cpp.o
-.PHONY : home/pi/labSelfDriving/source/CommInterface/selfDriving_CommDataDecode.cpp.o
+home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_Time.cpp.o:
+	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_Time.cpp.o
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_Time.cpp.o
 
-home/pi/labSelfDriving/source/CommInterface/selfDriving_CommDataDecode.i: home/pi/labSelfDriving/source/CommInterface/selfDriving_CommDataDecode.cpp.i
-.PHONY : home/pi/labSelfDriving/source/CommInterface/selfDriving_CommDataDecode.i
+home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_Time.i: home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_Time.cpp.i
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_Time.i
 
 # target to preprocess a source file
-home/pi/labSelfDriving/source/CommInterface/selfDriving_CommDataDecode.cpp.i:
-	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/source/CommInterface/selfDriving_CommDataDecode.cpp.i
-.PHONY : home/pi/labSelfDriving/source/CommInterface/selfDriving_CommDataDecode.cpp.i
+home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_Time.cpp.i:
+	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_Time.cpp.i
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_Time.cpp.i
 
-home/pi/labSelfDriving/source/CommInterface/selfDriving_CommDataDecode.s: home/pi/labSelfDriving/source/CommInterface/selfDriving_CommDataDecode.cpp.s
-.PHONY : home/pi/labSelfDriving/source/CommInterface/selfDriving_CommDataDecode.s
+home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_Time.s: home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_Time.cpp.s
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_Time.s
 
 # target to generate assembly for a file
-home/pi/labSelfDriving/source/CommInterface/selfDriving_CommDataDecode.cpp.s:
-	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/source/CommInterface/selfDriving_CommDataDecode.cpp.s
-.PHONY : home/pi/labSelfDriving/source/CommInterface/selfDriving_CommDataDecode.cpp.s
+home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_Time.cpp.s:
+	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_Time.cpp.s
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_Time.cpp.s
 
-home/pi/labSelfDriving/source/CommInterface/selfDriving_CommSetup.o: home/pi/labSelfDriving/source/CommInterface/selfDriving_CommSetup.cpp.o
-.PHONY : home/pi/labSelfDriving/source/CommInterface/selfDriving_CommSetup.o
+home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_WheelState.o: home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_WheelState.cpp.o
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_WheelState.o
 
 # target to build an object file
-home/pi/labSelfDriving/source/CommInterface/selfDriving_CommSetup.cpp.o:
-	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/source/CommInterface/selfDriving_CommSetup.cpp.o
-.PHONY : home/pi/labSelfDriving/source/CommInterface/selfDriving_CommSetup.cpp.o
+home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_WheelState.cpp.o:
+	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_WheelState.cpp.o
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_WheelState.cpp.o
 
-home/pi/labSelfDriving/source/CommInterface/selfDriving_CommSetup.i: home/pi/labSelfDriving/source/CommInterface/selfDriving_CommSetup.cpp.i
-.PHONY : home/pi/labSelfDriving/source/CommInterface/selfDriving_CommSetup.i
+home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_WheelState.i: home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_WheelState.cpp.i
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_WheelState.i
 
 # target to preprocess a source file
-home/pi/labSelfDriving/source/CommInterface/selfDriving_CommSetup.cpp.i:
-	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/source/CommInterface/selfDriving_CommSetup.cpp.i
-.PHONY : home/pi/labSelfDriving/source/CommInterface/selfDriving_CommSetup.cpp.i
+home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_WheelState.cpp.i:
+	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_WheelState.cpp.i
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_WheelState.cpp.i
 
-home/pi/labSelfDriving/source/CommInterface/selfDriving_CommSetup.s: home/pi/labSelfDriving/source/CommInterface/selfDriving_CommSetup.cpp.s
-.PHONY : home/pi/labSelfDriving/source/CommInterface/selfDriving_CommSetup.s
+home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_WheelState.s: home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_WheelState.cpp.s
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_WheelState.s
 
 # target to generate assembly for a file
-home/pi/labSelfDriving/source/CommInterface/selfDriving_CommSetup.cpp.s:
-	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/source/CommInterface/selfDriving_CommSetup.cpp.s
-.PHONY : home/pi/labSelfDriving/source/CommInterface/selfDriving_CommSetup.cpp.s
+home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_WheelState.cpp.s:
+	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_WheelState.cpp.s
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_WheelState.cpp.s
 
-home/pi/labSelfDriving/source/CommInterface/selfDriving_CommThread.o: home/pi/labSelfDriving/source/CommInterface/selfDriving_CommThread.cpp.o
-.PHONY : home/pi/labSelfDriving/source/CommInterface/selfDriving_CommThread.o
+home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommDataDecode.o: home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommDataDecode.cpp.o
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommDataDecode.o
 
 # target to build an object file
-home/pi/labSelfDriving/source/CommInterface/selfDriving_CommThread.cpp.o:
-	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/source/CommInterface/selfDriving_CommThread.cpp.o
-.PHONY : home/pi/labSelfDriving/source/CommInterface/selfDriving_CommThread.cpp.o
+home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommDataDecode.cpp.o:
+	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommDataDecode.cpp.o
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommDataDecode.cpp.o
 
-home/pi/labSelfDriving/source/CommInterface/selfDriving_CommThread.i: home/pi/labSelfDriving/source/CommInterface/selfDriving_CommThread.cpp.i
-.PHONY : home/pi/labSelfDriving/source/CommInterface/selfDriving_CommThread.i
+home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommDataDecode.i: home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommDataDecode.cpp.i
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommDataDecode.i
 
 # target to preprocess a source file
-home/pi/labSelfDriving/source/CommInterface/selfDriving_CommThread.cpp.i:
-	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/source/CommInterface/selfDriving_CommThread.cpp.i
-.PHONY : home/pi/labSelfDriving/source/CommInterface/selfDriving_CommThread.cpp.i
+home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommDataDecode.cpp.i:
+	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommDataDecode.cpp.i
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommDataDecode.cpp.i
 
-home/pi/labSelfDriving/source/CommInterface/selfDriving_CommThread.s: home/pi/labSelfDriving/source/CommInterface/selfDriving_CommThread.cpp.s
-.PHONY : home/pi/labSelfDriving/source/CommInterface/selfDriving_CommThread.s
+home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommDataDecode.s: home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommDataDecode.cpp.s
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommDataDecode.s
 
 # target to generate assembly for a file
-home/pi/labSelfDriving/source/CommInterface/selfDriving_CommThread.cpp.s:
-	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/source/CommInterface/selfDriving_CommThread.cpp.s
-.PHONY : home/pi/labSelfDriving/source/CommInterface/selfDriving_CommThread.cpp.s
+home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommDataDecode.cpp.s:
+	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommDataDecode.cpp.s
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommDataDecode.cpp.s
 
-home/pi/labSelfDriving/source/selfDriving.o: home/pi/labSelfDriving/source/selfDriving.cpp.o
-.PHONY : home/pi/labSelfDriving/source/selfDriving.o
+home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommSetup.o: home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommSetup.cpp.o
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommSetup.o
 
 # target to build an object file
-home/pi/labSelfDriving/source/selfDriving.cpp.o:
-	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/source/selfDriving.cpp.o
-.PHONY : home/pi/labSelfDriving/source/selfDriving.cpp.o
+home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommSetup.cpp.o:
+	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommSetup.cpp.o
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommSetup.cpp.o
 
-home/pi/labSelfDriving/source/selfDriving.i: home/pi/labSelfDriving/source/selfDriving.cpp.i
-.PHONY : home/pi/labSelfDriving/source/selfDriving.i
+home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommSetup.i: home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommSetup.cpp.i
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommSetup.i
 
 # target to preprocess a source file
-home/pi/labSelfDriving/source/selfDriving.cpp.i:
-	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/source/selfDriving.cpp.i
-.PHONY : home/pi/labSelfDriving/source/selfDriving.cpp.i
+home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommSetup.cpp.i:
+	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommSetup.cpp.i
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommSetup.cpp.i
 
-home/pi/labSelfDriving/source/selfDriving.s: home/pi/labSelfDriving/source/selfDriving.cpp.s
-.PHONY : home/pi/labSelfDriving/source/selfDriving.s
+home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommSetup.s: home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommSetup.cpp.s
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommSetup.s
 
 # target to generate assembly for a file
-home/pi/labSelfDriving/source/selfDriving.cpp.s:
-	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/source/selfDriving.cpp.s
-.PHONY : home/pi/labSelfDriving/source/selfDriving.cpp.s
+home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommSetup.cpp.s:
+	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommSetup.cpp.s
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommSetup.cpp.s
 
-home/pi/labSelfDriving/source/selfDriving_MainThreads.o: home/pi/labSelfDriving/source/selfDriving_MainThreads.cpp.o
-.PHONY : home/pi/labSelfDriving/source/selfDriving_MainThreads.o
+home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommThread.o: home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommThread.cpp.o
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommThread.o
 
 # target to build an object file
-home/pi/labSelfDriving/source/selfDriving_MainThreads.cpp.o:
-	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/source/selfDriving_MainThreads.cpp.o
-.PHONY : home/pi/labSelfDriving/source/selfDriving_MainThreads.cpp.o
+home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommThread.cpp.o:
+	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommThread.cpp.o
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommThread.cpp.o
 
-home/pi/labSelfDriving/source/selfDriving_MainThreads.i: home/pi/labSelfDriving/source/selfDriving_MainThreads.cpp.i
-.PHONY : home/pi/labSelfDriving/source/selfDriving_MainThreads.i
+home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommThread.i: home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommThread.cpp.i
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommThread.i
 
 # target to preprocess a source file
-home/pi/labSelfDriving/source/selfDriving_MainThreads.cpp.i:
-	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/source/selfDriving_MainThreads.cpp.i
-.PHONY : home/pi/labSelfDriving/source/selfDriving_MainThreads.cpp.i
+home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommThread.cpp.i:
+	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommThread.cpp.i
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommThread.cpp.i
 
-home/pi/labSelfDriving/source/selfDriving_MainThreads.s: home/pi/labSelfDriving/source/selfDriving_MainThreads.cpp.s
-.PHONY : home/pi/labSelfDriving/source/selfDriving_MainThreads.s
+home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommThread.s: home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommThread.cpp.s
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommThread.s
 
 # target to generate assembly for a file
-home/pi/labSelfDriving/source/selfDriving_MainThreads.cpp.s:
-	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/source/selfDriving_MainThreads.cpp.s
-.PHONY : home/pi/labSelfDriving/source/selfDriving_MainThreads.cpp.s
+home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommThread.cpp.s:
+	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommThread.cpp.s
+.PHONY : home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommThread.cpp.s
+
+home/pi/labSelfDriving/knutsdr/source/selfDriving.o: home/pi/labSelfDriving/knutsdr/source/selfDriving.cpp.o
+.PHONY : home/pi/labSelfDriving/knutsdr/source/selfDriving.o
+
+# target to build an object file
+home/pi/labSelfDriving/knutsdr/source/selfDriving.cpp.o:
+	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/knutsdr/source/selfDriving.cpp.o
+.PHONY : home/pi/labSelfDriving/knutsdr/source/selfDriving.cpp.o
+
+home/pi/labSelfDriving/knutsdr/source/selfDriving.i: home/pi/labSelfDriving/knutsdr/source/selfDriving.cpp.i
+.PHONY : home/pi/labSelfDriving/knutsdr/source/selfDriving.i
+
+# target to preprocess a source file
+home/pi/labSelfDriving/knutsdr/source/selfDriving.cpp.i:
+	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/knutsdr/source/selfDriving.cpp.i
+.PHONY : home/pi/labSelfDriving/knutsdr/source/selfDriving.cpp.i
+
+home/pi/labSelfDriving/knutsdr/source/selfDriving.s: home/pi/labSelfDriving/knutsdr/source/selfDriving.cpp.s
+.PHONY : home/pi/labSelfDriving/knutsdr/source/selfDriving.s
+
+# target to generate assembly for a file
+home/pi/labSelfDriving/knutsdr/source/selfDriving.cpp.s:
+	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/knutsdr/source/selfDriving.cpp.s
+.PHONY : home/pi/labSelfDriving/knutsdr/source/selfDriving.cpp.s
+
+home/pi/labSelfDriving/knutsdr/source/selfDriving_MainThreads.o: home/pi/labSelfDriving/knutsdr/source/selfDriving_MainThreads.cpp.o
+.PHONY : home/pi/labSelfDriving/knutsdr/source/selfDriving_MainThreads.o
+
+# target to build an object file
+home/pi/labSelfDriving/knutsdr/source/selfDriving_MainThreads.cpp.o:
+	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/knutsdr/source/selfDriving_MainThreads.cpp.o
+.PHONY : home/pi/labSelfDriving/knutsdr/source/selfDriving_MainThreads.cpp.o
+
+home/pi/labSelfDriving/knutsdr/source/selfDriving_MainThreads.i: home/pi/labSelfDriving/knutsdr/source/selfDriving_MainThreads.cpp.i
+.PHONY : home/pi/labSelfDriving/knutsdr/source/selfDriving_MainThreads.i
+
+# target to preprocess a source file
+home/pi/labSelfDriving/knutsdr/source/selfDriving_MainThreads.cpp.i:
+	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/knutsdr/source/selfDriving_MainThreads.cpp.i
+.PHONY : home/pi/labSelfDriving/knutsdr/source/selfDriving_MainThreads.cpp.i
+
+home/pi/labSelfDriving/knutsdr/source/selfDriving_MainThreads.s: home/pi/labSelfDriving/knutsdr/source/selfDriving_MainThreads.cpp.s
+.PHONY : home/pi/labSelfDriving/knutsdr/source/selfDriving_MainThreads.s
+
+# target to generate assembly for a file
+home/pi/labSelfDriving/knutsdr/source/selfDriving_MainThreads.cpp.s:
+	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/home/pi/labSelfDriving/knutsdr/source/selfDriving_MainThreads.cpp.s
+.PHONY : home/pi/labSelfDriving/knutsdr/source/selfDriving_MainThreads.cpp.s
 
 # Help Target
 help:
@@ -412,42 +460,48 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... selfDrivingCarExe"
-	@echo "... home/pi/labSelfDriving/source/CmdInterface/SystemVariables.o"
-	@echo "... home/pi/labSelfDriving/source/CmdInterface/SystemVariables.i"
-	@echo "... home/pi/labSelfDriving/source/CmdInterface/SystemVariables.s"
-	@echo "... home/pi/labSelfDriving/source/CmdInterface/selfDriving_CmdThread.o"
-	@echo "... home/pi/labSelfDriving/source/CmdInterface/selfDriving_CmdThread.i"
-	@echo "... home/pi/labSelfDriving/source/CmdInterface/selfDriving_CmdThread.s"
-	@echo "... home/pi/labSelfDriving/source/CmdInterface/selfDriving_HighLvCmd.o"
-	@echo "... home/pi/labSelfDriving/source/CmdInterface/selfDriving_HighLvCmd.i"
-	@echo "... home/pi/labSelfDriving/source/CmdInterface/selfDriving_HighLvCmd.s"
-	@echo "... home/pi/labSelfDriving/source/CmdInterface/selfDriving_IOPi.o"
-	@echo "... home/pi/labSelfDriving/source/CmdInterface/selfDriving_IOPi.i"
-	@echo "... home/pi/labSelfDriving/source/CmdInterface/selfDriving_IOPi.s"
-	@echo "... home/pi/labSelfDriving/source/CmdInterface/selfDriving_LowLvCmd.o"
-	@echo "... home/pi/labSelfDriving/source/CmdInterface/selfDriving_LowLvCmd.i"
-	@echo "... home/pi/labSelfDriving/source/CmdInterface/selfDriving_LowLvCmd.s"
-	@echo "... home/pi/labSelfDriving/source/CmdInterface/selfDriving_Time.o"
-	@echo "... home/pi/labSelfDriving/source/CmdInterface/selfDriving_Time.i"
-	@echo "... home/pi/labSelfDriving/source/CmdInterface/selfDriving_Time.s"
-	@echo "... home/pi/labSelfDriving/source/CmdInterface/selfDriving_WheelState.o"
-	@echo "... home/pi/labSelfDriving/source/CmdInterface/selfDriving_WheelState.i"
-	@echo "... home/pi/labSelfDriving/source/CmdInterface/selfDriving_WheelState.s"
-	@echo "... home/pi/labSelfDriving/source/CommInterface/selfDriving_CommDataDecode.o"
-	@echo "... home/pi/labSelfDriving/source/CommInterface/selfDriving_CommDataDecode.i"
-	@echo "... home/pi/labSelfDriving/source/CommInterface/selfDriving_CommDataDecode.s"
-	@echo "... home/pi/labSelfDriving/source/CommInterface/selfDriving_CommSetup.o"
-	@echo "... home/pi/labSelfDriving/source/CommInterface/selfDriving_CommSetup.i"
-	@echo "... home/pi/labSelfDriving/source/CommInterface/selfDriving_CommSetup.s"
-	@echo "... home/pi/labSelfDriving/source/CommInterface/selfDriving_CommThread.o"
-	@echo "... home/pi/labSelfDriving/source/CommInterface/selfDriving_CommThread.i"
-	@echo "... home/pi/labSelfDriving/source/CommInterface/selfDriving_CommThread.s"
-	@echo "... home/pi/labSelfDriving/source/selfDriving.o"
-	@echo "... home/pi/labSelfDriving/source/selfDriving.i"
-	@echo "... home/pi/labSelfDriving/source/selfDriving.s"
-	@echo "... home/pi/labSelfDriving/source/selfDriving_MainThreads.o"
-	@echo "... home/pi/labSelfDriving/source/selfDriving_MainThreads.i"
-	@echo "... home/pi/labSelfDriving/source/selfDriving_MainThreads.s"
+	@echo "... home/pi/labSelfDriving/knutsdr/source/CalcInterface/selfDriving_CalcThread.o"
+	@echo "... home/pi/labSelfDriving/knutsdr/source/CalcInterface/selfDriving_CalcThread.i"
+	@echo "... home/pi/labSelfDriving/knutsdr/source/CalcInterface/selfDriving_CalcThread.s"
+	@echo "... home/pi/labSelfDriving/knutsdr/source/CalcInterface/selfDriving_calulationHelper.o"
+	@echo "... home/pi/labSelfDriving/knutsdr/source/CalcInterface/selfDriving_calulationHelper.i"
+	@echo "... home/pi/labSelfDriving/knutsdr/source/CalcInterface/selfDriving_calulationHelper.s"
+	@echo "... home/pi/labSelfDriving/knutsdr/source/CmdInterface/SystemVariables.o"
+	@echo "... home/pi/labSelfDriving/knutsdr/source/CmdInterface/SystemVariables.i"
+	@echo "... home/pi/labSelfDriving/knutsdr/source/CmdInterface/SystemVariables.s"
+	@echo "... home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_CmdThread.o"
+	@echo "... home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_CmdThread.i"
+	@echo "... home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_CmdThread.s"
+	@echo "... home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_HighLvCmd.o"
+	@echo "... home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_HighLvCmd.i"
+	@echo "... home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_HighLvCmd.s"
+	@echo "... home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_IOPi.o"
+	@echo "... home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_IOPi.i"
+	@echo "... home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_IOPi.s"
+	@echo "... home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_LowLvCmd.o"
+	@echo "... home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_LowLvCmd.i"
+	@echo "... home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_LowLvCmd.s"
+	@echo "... home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_Time.o"
+	@echo "... home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_Time.i"
+	@echo "... home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_Time.s"
+	@echo "... home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_WheelState.o"
+	@echo "... home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_WheelState.i"
+	@echo "... home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_WheelState.s"
+	@echo "... home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommDataDecode.o"
+	@echo "... home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommDataDecode.i"
+	@echo "... home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommDataDecode.s"
+	@echo "... home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommSetup.o"
+	@echo "... home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommSetup.i"
+	@echo "... home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommSetup.s"
+	@echo "... home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommThread.o"
+	@echo "... home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommThread.i"
+	@echo "... home/pi/labSelfDriving/knutsdr/source/CommInterface/selfDriving_CommThread.s"
+	@echo "... home/pi/labSelfDriving/knutsdr/source/selfDriving.o"
+	@echo "... home/pi/labSelfDriving/knutsdr/source/selfDriving.i"
+	@echo "... home/pi/labSelfDriving/knutsdr/source/selfDriving.s"
+	@echo "... home/pi/labSelfDriving/knutsdr/source/selfDriving_MainThreads.o"
+	@echo "... home/pi/labSelfDriving/knutsdr/source/selfDriving_MainThreads.i"
+	@echo "... home/pi/labSelfDriving/knutsdr/source/selfDriving_MainThreads.s"
 .PHONY : help
 
 

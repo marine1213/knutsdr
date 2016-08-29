@@ -3,7 +3,6 @@
 
 int main(void)
 {
-
 	if(!init())
 	    return 0;
 	openInput(getInputData());

@@ -1,1 +1,1 @@
-/home/pi/labSelfDriving/build/CMakeFiles/selfDrivingCarExe.dir
+/home/pi/labSelfDriving/knutsdr/build/CMakeFiles/selfDrivingCarExe.dir

@@ -15,6 +15,7 @@ int 	init();
 void 	onExit();
 
 //------------------ High Level Command ------------------
+void	searchForWheelState(WheelState newState);
 void 	searchForCenterPoint();
 HLvCmd 	decodeHLvCmd(char* c);
 
@@ -23,6 +24,7 @@ bool  	exec(char* c, int sleepTime = 0);
 void 	decodeLLvCmd(char* c);
 int	getExecTime(char *c);
 void 	resetCmdState();
+void 	resetTurnCmdState();
 
 //-------------------------- Time ------------------------
 long	checkTime(struct timespec last,long exceedingTime);
@@ -35,10 +37,13 @@ void 	getInput(char* c);
 
 //----------------------- Wheel State ---------------------
 void	centerPointItr();		// interrupt cb
-void 	showWheelState(WheelState state);	
-void 	changeWheelState(LLvCmd llCmd);
+void 	showWheelState(WheelState state);
+void 	changeWheelState(LLvCmd command);
+void 	setMaxWheelState(LLvCmd command);
 void	setWheelState(WheelState newState);
+void	setWheelState(int newState);
 WheelState	getWheelState();
+WheelState 	convertWheelState(int s);
 
 //----------------- get global parameters ------------------
 void		setMode(WorkingMode m);

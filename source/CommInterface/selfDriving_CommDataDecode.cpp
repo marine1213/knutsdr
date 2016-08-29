@@ -2,7 +2,7 @@
 
 MovingState mvState = STOPPED;
 Point		map;
-queue<Point> 	position;
+QArray 		position(2);
 Session *currentSession = NULL; // information about current session
 
 Point	*prevPosition;
@@ -74,34 +74,37 @@ void decodeReceivedData(char *input){
 		} else{
 		    log("Saving Target Error: There is no working session");
 		}
+		if(!isAutoDriving()){
+		    log(" unlock auto driving");
+		    setAutoDriving(true);
+		}
+		    piUnlock(KEY_AUTO_GO);
+		    piUnlock(KEY_AUTO_CALC);
 	    break;
 	    case 'P':
 		if(1){
 		    float *num = extractNumber(c);
 		    cout<<"Received Position: ["<< num[1]<<" , "<<num[2]<<"]"<<endl;
-		    addQueue(num,position);
-			piUnlock(KEY_POSITION);
+ 		    if(num[0] < 2)
+			log("Not enough values for a point");
+    		    else{
+		    	position.add(Point(num[1],num[2]));
+		    }
 
-		    Point *newPosition = &position.back();
+		    Point newPosition = position.back(0);
 		    if(!prevPosition){
 			mvState = MOVING;
 		    }else {
-			if(newPosition->distance(prevPosition) == 0)
+			if(newPosition.distance(prevPosition) == 0)
 			    mvState = STOPPED;
 		    	else
 			    mvState = MOVING;
 		    }
+		    piUnlock(KEY_POSITION);
 
-		    prevPosition = newPosition;
-		    if(position.size()>10)
-			position.pop();
+		    prevPosition = &newPosition;
 		    free(num);
 		    free(c);
-		}
-		if(!isAutoDriving()){
-		    log(" unlock auto driving");
-		    setAutoDriving(true);
-		    piUnlock(KEY_AUTO);
 		}
 	    break;
 	    case 'I':
@@ -133,7 +136,7 @@ void decodeReceivedData(char *input){
 /*
  * return list of position
  */
-queue<Point>* getPosition(){
+QArray* getPosition(){
     return &position;
 }
 

@@ -47,10 +47,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/labSelfDriving/build
+CMAKE_SOURCE_DIR = /home/pi/labSelfDriving/knutsdr/build
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/labSelfDriving/build
+CMAKE_BINARY_DIR = /home/pi/labSelfDriving/knutsdr/build
 
 #=============================================================================
 # Target rules for target CMakeFiles/selfDrivingCarExe.dir
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/pi/labSelfDriving/build
 CMakeFiles/selfDrivingCarExe.dir/all:
 	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/depend
 	$(MAKE) -f CMakeFiles/selfDrivingCarExe.dir/build.make CMakeFiles/selfDrivingCarExe.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/pi/labSelfDriving/build/CMakeFiles  1 2 3 4 5 6 7 8 9 10 11 12
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/pi/labSelfDriving/knutsdr/build/CMakeFiles  1 2 3 4 5 6 7 8 9 10 11 12 13 14
 	@echo "Built target selfDrivingCarExe"
 .PHONY : CMakeFiles/selfDrivingCarExe.dir/all
 
@@ -69,9 +69,9 @@ all: CMakeFiles/selfDrivingCarExe.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/selfDrivingCarExe.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/labSelfDriving/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/labSelfDriving/knutsdr/build/CMakeFiles 14
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/selfDrivingCarExe.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/labSelfDriving/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/labSelfDriving/knutsdr/build/CMakeFiles 0
 .PHONY : CMakeFiles/selfDrivingCarExe.dir/rule
 
 # Convenience name for target.

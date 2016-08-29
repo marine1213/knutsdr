@@ -16,6 +16,8 @@ file(GLOB SOURCES
 	../source/CmdInterface/*.h
 	../source/CommInterface/*.cpp
 	../source/CommInterface/*.h
+	../source/CalcInterface/*.cpp
+	../source/CalcInterface/*.h
 )
 # Link against libraries to executable file
 add_executable( selfDrivingCarExe ${SOURCES})

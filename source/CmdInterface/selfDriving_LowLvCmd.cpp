@@ -28,16 +28,23 @@ bool exec(char* c, int sleepTime){
 void decodeLLvCmd(char* c){
 	setLlCmd( NO_LLvCmd );
 	char buffer[20];
+	int time;
 	switch(c[0]){
 	    case 'L':	// turn left
 		    setLlCmd( TURN_L );
-		    setExceedingTime( getExecTime(c) );
+		    time = getExecTime(c);
+		    setExceedingTime( time );
+		    if(time >= TIME_THRES_LEFT)
+			setWheelState(LEFT2);
 		    sprintf(buffer,"Turn left %d ms", getExceedingTime());
 		    log(buffer);
 	    break;
 	    case 'R':	// turn right
 		    setLlCmd( TURN_R );
-		    setExceedingTime( getExecTime(c) );
+		    time = getExecTime(c);
+		    setExceedingTime( time );
+		    if(time >= TIME_THRES_RIGHT)
+			setWheelState(RIGHT2);
 		    sprintf(buffer,"Turn right %d ms", getExceedingTime());
 		    log(buffer);
 	    break;
@@ -74,23 +81,43 @@ int getExecTime(char *c){
 	}
     return getExceedingTime();
 }
+
 /*
- * resetCmdState all output port
+ * resetCmdState of all output port
  */
 void resetCmdState(){
 	digitalWrite(TURN_L, 0);
 	digitalWrite(TURN_R, 0);
 	digitalWrite(FORWARD, 0);
 	digitalWrite(BACKWARD, 0);
-	setExceedingTime(EXEC_TIME_LIM2);
+	setExceedingTime(EXEC_TIME_TURN);
 }
+
+/*
+ * reset turn cmdState of turning output port
+ */
+void resetTurnCmdState(){
+	digitalWrite(TURN_L, 0);
+	digitalWrite(TURN_R, 0);
+}
+
+/*
+ * return last moment when the low level cmd is executed
+ */
 struct timespec getLastExec(){
 	return last;
 }
 
+/*
+ * return last executed low level cmd
+ */
 LLvCmd getLlCmd(){
     return llCmd;
 }
+
+/*
+ * set executed low level cmd
+ */
 void setLlCmd(LLvCmd cmd){
     llCmd = cmd;
 }

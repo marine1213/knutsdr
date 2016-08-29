@@ -12,9 +12,9 @@
 #include <time.h>
 
 
+using namespace std;
 #include "selfDriving_Session.h"
 
-using namespace std;
 
 
 #define ONE_MILLION	1000000
@@ -22,16 +22,19 @@ using namespace std;
 
 #define MAX_EXEC_TIME	10 * ONE_THOUSAND
 #define EXEC_TIME_LIM1	6 * ONE_THOUSAND
-#define EXEC_TIME_LIM2	3 * ONE_THOUSAND
+#define EXEC_TIME_TURN	3 * ONE_THOUSAND
 #define EXEC_TIME_LIM3	ONE_THOUSAND
 
-#define TIME_FULL_LEFT	600
-#define TIME_FULL_RIGHT	700
+#define TIME_THRES_LEFT		300
+#define TIME_FULL_LEFT		600
+#define TIME_THRES_RIGHT	300
+#define TIME_FULL_RIGHT		600
 #define TIME_FORWARD	1000
 #define TIME_BACKWARD	1500
 
 #define KEY_POSITION	4
-#define KEY_AUTO	5
+#define KEY_AUTO_GO	5
+#define KEY_AUTO_CALC	6
 
 enum WorkingMode{
 	DEBUG_MODE,
@@ -44,9 +47,11 @@ enum InputType{
 };
 
 enum WheelState {
-	WH_UNKNOWN = -1,
-	LEFT	   = 2,
-	RIGHT 	   = 3,
+	RIGHT2	= 2,
+	RIGHT1	= 1,
+	CENTER	= 0,
+	LEFT1	=-1,
+	LEFT2	=-2,
 };
 
 enum MovingState {
@@ -91,10 +96,11 @@ void 	pushToCmd(char *c);
 
 //--------------- Comm - Calc Interface ----------------- 
 Session* 	getSession();
-queue<Point>* 	getPosition();
+QArray* 	getPosition();
 Point		getMap();
 MovingState	getMovingState();
 void		setMovingState(MovingState state);
+bool		isCalculating();
 
 //-------------------------------------------------------
 

@@ -8,13 +8,7 @@
 
 using namespace std;
 
-class Direction{
-    public:
-	float cosine;
-	float leftOrRight;
-	
-	Direction(float cos, float lOr):cosine(cos),leftOrRight(lOr) {};
-};
+
 class Point{
     public:
 	float x,y;
@@ -82,7 +76,21 @@ class Line{
 	    cout<<" cosine = "<< cosin<< endl;
 	}
 };
-
+class QArray{
+    private:
+	Point 	*data;
+	int	lastId;
+	int	qsize;
+	int	num;
+    public:
+	QArray(int s):lastId(0),qsize(s),num(0){ data = (Point*)malloc(s*sizeof(Point));};
+		~QArray()	{ free(data);	};
+	void 	add(Point p)	{ data[lastId%qsize] = p; lastId++; num += (num + 1) > qsize? 0 : 1; };
+	Point 	front(int id)	{ return data[(lastId + 1 + id) % qsize];};
+	Point 	back(int id)	{ return data[(lastId - id) % qsize];};
+	int 	size() 		{ return num; };
+	
+};
 class Session{
     private:
 	char *id;
