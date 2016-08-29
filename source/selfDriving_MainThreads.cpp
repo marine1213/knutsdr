@@ -27,7 +27,7 @@ PI_THREAD (decoThread)
 //-------------------- Calculation thread ----------------
 PI_THREAD (speedThread)
 {
-//    keepGoingForwardThread();
+    keepGoingForwardThread();
 }
 
 
@@ -47,6 +47,7 @@ int init(){
 	setWheelState( CENTER );
 	setAutoDriving(false);
 	setMovingState(STOPPED);
+	setMovingPhase(false);
 
 	if(wiringPiSetup() == -1){
 	    cout<< "unable to start wiringPi" <<endl;

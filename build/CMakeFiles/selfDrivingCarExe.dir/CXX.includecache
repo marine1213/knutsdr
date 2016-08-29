@@ -6,19 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/pi/labSelfDriving/knutsdr/source/CalcInterface/CalcInterface.h
-../Common.h
-/home/pi/labSelfDriving/knutsdr/source/Common.h
-../CmdInterface/CmdInterface.h
-/home/pi/labSelfDriving/knutsdr/source/CmdInterface/CmdInterface.h
-
-/home/pi/labSelfDriving/knutsdr/source/CalcInterface/selfDriving_CalcThread.cpp
-CalcInterface.h
-/home/pi/labSelfDriving/knutsdr/source/CalcInterface/CalcInterface.h
-
 /home/pi/labSelfDriving/knutsdr/source/CmdInterface/CmdInterface.h
 ../Common.h
 /home/pi/labSelfDriving/knutsdr/source/Common.h
+
+/home/pi/labSelfDriving/knutsdr/source/CmdInterface/selfDriving_HighLvCmd.cpp
+CmdInterface.h
+/home/pi/labSelfDriving/knutsdr/source/CmdInterface/CmdInterface.h
 
 /home/pi/labSelfDriving/knutsdr/source/Common.h
 wiringSerial.h

@@ -1,6 +1,6 @@
 #include "CalcInterface.h"
 
-// stopped using this function
+
 void keepGoingForwardThread(){
 	Point prevPoint;
 	QArray *position = getPosition();
@@ -8,8 +8,11 @@ void keepGoingForwardThread(){
     	struct timespec last;
 	clock_gettime(CLOCK_REALTIME, &last);
 
-	char cmdList[1][6] = {"F2000"};
+	char cmdList[1][6] = {"F3000"};
 	while(isCalculating()){
+	    if(!isInitMovingPhase()){
+		piLock(KEY_MOV2CALC);
+	    }
 	    if(isAutoDriving())
 		exec(cmdList[0],1000);
 	    else{
@@ -27,9 +30,8 @@ void keepGoingForwardThread(){
 }
 
 void changDirectionThread(){
-	char cmdList[4][6] = {"L700","R700"};
-	float limRight  = 3;
-	float limLeft 	= -3;
+	float limRight  = 10;
+	float limLeft 	= -10;
     while(isCalculating()){
 	if(isAutoDriving()){
 	    if(getSession() && getSession()->target.size()){
@@ -44,19 +46,17 @@ void changDirectionThread(){
 		float d = getPosition()->back(0).distance(&target);
 		cout<<" Distance to next target: "<<d<<endl;
 		if(angle <= limRight && angle >= limLeft){
-		    if(d<170)
+		    if(d<300)
 			resetCmdState();
 		    else
-			searchForCenterPoint();
+			turnWithWheelState(CENTER,1500);
 		}else 
 
 		// turn based on target
 		if(angle > limRight){ 
-		    exec(cmdList[1],100);	// Turn Right
-		    searchForCenterPoint();
+		    turnWithWheelState(RIGHT1,1500);
 		}else if(angle < limLeft){
-		    exec(cmdList[0],100);	// Turn Left
-		    searchForCenterPoint();
+    		    turnWithWheelState(LEFT1,1500);
 		}
 	    }else
 		setAutoDriving(false);

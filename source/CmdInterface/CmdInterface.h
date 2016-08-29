@@ -15,6 +15,7 @@ int 	init();
 void 	onExit();
 
 //------------------ High Level Command ------------------
+void 	turnWithWheelState(WheelState st,int fwTime, int delay = 100);
 void	searchForWheelState(WheelState newState);
 void 	searchForCenterPoint();
 HLvCmd 	decodeHLvCmd(char* c);

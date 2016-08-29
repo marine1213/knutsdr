@@ -77,12 +77,16 @@ void decodeReceivedData(char *input){
 		if(!isAutoDriving()){
 		    log(" unlock auto driving");
 		    setAutoDriving(true);
+		    setMovingPhase(true); // let car run straight some time
+		    piUnlock(KEY_MOV2CALC);
 		}
+		    setMovingPhase(true);
 		    piUnlock(KEY_AUTO_GO);
 		    piUnlock(KEY_AUTO_CALC);
 	    break;
 	    case 'P':
 		if(1){
+		    setMovingPhase(false); // stop car from running wildly
 		    float *num = extractNumber(c);
 		    cout<<"Received Position: ["<< num[1]<<" , "<<num[2]<<"]"<<endl;
  		    if(num[0] < 2)

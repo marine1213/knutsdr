@@ -77,7 +77,7 @@ void searchForWheelState(WheelState newState){
 	int currSt = getWheelState();
 	if(abs(currSt) < 2){
 	    // solution 2: do full turn before turning to middle position
-	    char fullTurnCmd = {"L300","R700","R300"};
+	    char fullTurnCmd[3][6] = {"L300","R700","R300"};
 	    int  fullTurnId = currSt + 1;
 	    exec(fullTurnCmd[fullTurnId],100);
 
@@ -115,6 +115,16 @@ void searchForWheelState(WheelState newState){
  */
 void searchForCenterPoint(){
 	searchForWheelState(CENTER);
+}
+
+/*
+ * steer the wheel and go for a mount of time
+ */
+void turnWithWheelState(WheelState st,int forwardTime, int delayTime){
+	searchForWheelState(st);
+	setExceedingTime(forwardTime);
+	char c[2] = "F";
+	exec(c, delayTime);
 }
 
 /*
@@ -160,6 +170,8 @@ HLvCmd decodeHLvCmd(char* c){
 		if(!isAutoDriving()){
 		    log(" unlock auto driving");
 		    setAutoDriving(true);
+		    setMovingPhase(true);// let the car run straight for a while
+		    piUnlock(KEY_MOV2CALC); 
 		}
 		    piUnlock(KEY_AUTO_GO);
 		    piUnlock(KEY_AUTO_CALC);

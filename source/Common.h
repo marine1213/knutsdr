@@ -35,6 +35,7 @@ using namespace std;
 #define KEY_POSITION	4
 #define KEY_AUTO_GO	5
 #define KEY_AUTO_CALC	6
+#define KEY_MOV2CALC    7
 
 enum WorkingMode{
 	DEBUG_MODE,
@@ -101,6 +102,8 @@ Point		getMap();
 MovingState	getMovingState();
 void		setMovingState(MovingState state);
 bool		isCalculating();
+bool		isInitMovingPhase();
+void		setMovingPhase(bool mvPhase);
 
 //-------------------------------------------------------
 
