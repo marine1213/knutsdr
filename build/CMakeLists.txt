@@ -1,7 +1,8 @@
-cmake_minimum_required(VERSION 2.8)
+cmake_minimum_required(VERSION 3.0)
 project( selfDrivingCar )
 
 # Locate libraries and headers
+set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} /home/pi/cmake-3.2.2/Modules)
 find_package(wiringPi REQUIRED)
 
 # Include headers
@@ -22,7 +23,6 @@ file(GLOB SOURCES
 # Link against libraries to executable file
 add_executable( selfDrivingCarExe ${SOURCES})
 target_link_libraries(selfDrivingCarExe ${WIRINGPI_LIBRARIES})
-
 
 #===================== create FindwiringPi.cmake =====================
 ######################################################################
